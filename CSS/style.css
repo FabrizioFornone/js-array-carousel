@@ -4,18 +4,28 @@
   margin: 0;
 }
 
+main, .hook {
+    display: flex;
+}
+
 main {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
 .hook {
-  height: 500px;
-  width: 500px;
   margin: 0 50px;
+  padding: 20px;
+  width: 1000px;
   border: 2px solid #000;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hook > div {
+    padding: 20px 0;
 }
 
 .fas {
