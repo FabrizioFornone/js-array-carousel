@@ -3,14 +3,6 @@ body {
   background-color: antiquewhite;
 }
 
-.fa-hamsa {
-  display: none;
-}
-
-h1:hover .fa-hamsa {
-  display: inline-block;
-}
-
 main > div {
   height: 100vh;
 }
