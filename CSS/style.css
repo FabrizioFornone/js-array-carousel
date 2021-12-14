@@ -3,6 +3,14 @@ body {
   background-color: antiquewhite;
 }
 
+.fa-hamsa {
+  display: none;
+}
+
+h1:hover .fa-hamsa {
+  display: inline-block;
+}
+
 main > div {
   height: 100vh;
 }
@@ -11,13 +19,37 @@ main > div {
   width: 1000px;
 }
 
+.hook > h2 {
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.hook > h2:hover {
+  border-bottom: 2px solid #000;
+  transition: all 0.2s;
+}
+
 .hook > img {
-  width: 500px;
+  width: 450px;
   height: 300px;
   object-fit: cover;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.hook > img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 .fas {
   cursor: pointer;
   font-size: 30px;
+  transition: all 0.5s;
+}
+
+.fas:hover {
+  transition: all 0.5s;
+  transform: scale(2);
 }
