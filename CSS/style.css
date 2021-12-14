@@ -11,7 +11,11 @@ main > div {
   width: 1000px;
 }
 
-hook-title
+.hook > img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
 
 .fas {
   cursor: pointer;

@@ -11,15 +11,26 @@ const paragraph = [
   "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, molestias? Qui culpa deleniti quia nesciunt accusamus amet est atque iusto, tenetur eum illo nisi maxime quam cum! Distinctio, eius eos.",
 ];
 
+// Creazione array "Images"
+
+const images = [
+  "./img/6221794_1355_dante.jpg",
+  "./img/Gustave_Doré_-_Dante_Alighieri_-_Inferno_-_Plate_13_(Canto_V_-_Minos).jpg",
+  "./img/Gustave_Doré_-_The_Inferno,_Canto_13.jpg",
+  "./img/Lucifer-King-of-Hell.jpg",
+];
+
 // Creo current Index = 0
 
 let currentIndex = 0;
 
-// Creo gli agganci con il DOM del Title e del Paragraph
+// Creo gli agganci con il DOM del Title, del Paragraph e dell' IMG
 
 const hookTitleHtml = document.querySelector(".hook-title");
 
 const hookParagraphHtml = document.querySelector(".hook-paragraph");
+
+const hookImgHtml = document.getElementById("hook-img");
 
 // Creo gli agganci con il Dom delle arrows FW e BW
 
@@ -28,14 +39,19 @@ const arrowFw = document.getElementById("arrow-fw");
 const arrowBw = document.getElementById("arrow-bw");
 
 /* Associo "titles" array nella posizione "current index"
-  al div .hook-title */
+  al h2 class = .hook-title */
 
 hookTitleHtml.innerHTML = titles[currentIndex];
 
 /* Associo "paragraph" array nella posizione "current index"
-  al div .hook-paragraph */
+  al p class = .hook-paragraph */
 
 hookParagraphHtml.innerHTML = paragraph[currentIndex];
+
+/* Associo "images" array nella posizione "current index"
+  al tag img class= .hook-img */
+
+hookImgHtml.src = images[currentIndex];
 
 // click Event "Forward Arrow"
 
@@ -50,6 +66,8 @@ arrowFw.addEventListener("click", function () {
   hookTitleHtml.innerHTML = titles[currentIndex];
   // istruzione cambio paraghraph
   hookParagraphHtml.innerHTML = paragraph[currentIndex];
+  // istruzione cambio images
+  hookImgHtml.src = images[currentIndex];
 });
 
 // click Event "Backward Arrow"
@@ -66,4 +84,6 @@ arrowBw.addEventListener("click", function () {
   hookTitleHtml.innerHTML = titles[currentIndex];
   // istruzione cambio paraghraph
   hookParagraphHtml.innerHTML = paragraph[currentIndex];
+  // istruzione cambio images
+  hookImgHtml.src = images[currentIndex];
 });
