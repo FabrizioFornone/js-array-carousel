@@ -3,14 +3,15 @@ body {
   background-color: antiquewhite;
 }
 
-main {
+main > div {
   height: 100vh;
 }
 
 .hook {
   width: 1000px;
-  border: 2px solid #000;
 }
+
+hook-title
 
 .fas {
   cursor: pointer;
