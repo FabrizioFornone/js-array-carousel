@@ -1,31 +1,15 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-main, .hook {
-    display: flex;
+body {
+  font-family: "Sawarabi Mincho", sans-serif;
+  background-color: antiquewhite;
 }
 
 main {
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
 .hook {
-  margin: 0 50px;
-  padding: 20px;
   width: 1000px;
   border: 2px solid #000;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hook > div {
-    padding: 20px 0;
 }
 
 .fas {
